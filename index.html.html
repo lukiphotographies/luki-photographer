@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lukas Schmöllerl Photography</title>
+<meta name="description" content="Photography in Niederösterreich – Sport, Portrait, Cars & Pets.">
+<style>
+:root{--bg:#0b0b0b;--card:#151515;--text:#f5f5f5;--muted:#aaa;--accent:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}
+nav{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:18px 7%;background:rgba(11,11,11,.88);backdrop-filter:blur(10px)}
+.logo{font-weight:800;letter-spacing:1px}
+nav .links{display:flex;gap:24px;font-size:14px}
+.hero{min-height:100vh;display:flex;align-items:center;padding:120px 7% 70px;background:radial-gradient(circle at 75% 35%,#333 0,#171717 25%,#0b0b0b 55%)}
+.hero-inner{max-width:850px}
+.kicker{text-transform:uppercase;letter-spacing:4px;color:#bbb;font-size:13px;margin-bottom:18px}
+h1{font-size:clamp(48px,9vw,100px);line-height:.95;margin-bottom:25px}
+.hero p{font-size:20px;color:#ccc;max-width:650px;margin-bottom:35px}
+.btn{display:inline-block;background:#fff;color:#000;padding:14px 24px;border-radius:999px;font-weight:700;margin-right:10px}
+.btn.dark{background:#222;color:#fff;border:1px solid #444}
+section{padding:90px 7%}
+.section-title{font-size:38px;margin-bottom:35px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.photo{aspect-ratio:4/5;border-radius:12px;overflow:hidden;background:linear-gradient(135deg,#222,#555);display:flex;align-items:end;padding:20px;font-weight:700}
+.photo:nth-child(2){background:linear-gradient(135deg,#161616,#777)}
+.photo:nth-child(3){background:linear-gradient(135deg,#333,#111)}
+.photo:nth-child(4){background:linear-gradient(135deg,#777,#222)}
+.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.category{background:var(--card);padding:28px;border-radius:14px;border:1px solid #292929}
+.category h3{font-size:22px;margin-bottom:8px}.category p{color:var(--muted);font-size:14px}
+.about{max-width:750px;color:#ccc;font-size:18px}
+.prices{max-width:800px;border:1px solid #292929;border-radius:14px;overflow:hidden}
+.row{display:flex;justify-content:space-between;padding:18px 22px;border-bottom:1px solid #292929}
+.row:last-child{border:0}.price{font-weight:700}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+form{display:grid;gap:12px}
+input,select,textarea{width:100%;padding:14px;border-radius:9px;border:1px solid #333;background:#151515;color:#fff;font:inherit}
+textarea{min-height:140px;resize:vertical}
+button{border:0;cursor:pointer;font:inherit}
+.contact-info{color:#bbb}.contact-info p{margin-bottom:12px}
+footer{padding:30px 7%;border-top:1px solid #222;color:#777;font-size:13px}
+@media(max-width:800px){
+nav .links{display:none}.grid{grid-template-columns:repeat(2,1fr)}.categories{grid-template-columns:1fr 1fr}.contact{grid-template-columns:1fr}
+}
+@media(max-width:520px){
+section{padding:65px 6%}.hero{padding-left:6%;padding-right:6%}.grid,.categories{grid-template-columns:1fr 1fr}.hero p{font-size:17px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Lukas Schmöllerl</div>
+  <div class="links">
+    <a href="#portfolio">Portfolio</a>
+    <a href="#about">Über mich</a>
+    <a href="#preise">Preise</a>
+    <a href="#kontakt">Kontakt</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="kicker">Photography · Niederösterreich</div>
+    <h1>Momente.<br>Bewegung.<br>Bilder.</h1>
+    <p>Sport • Portrait • Cars • Pets<br>Hochwertige Fotos für besondere Momente.</p>
+    <a class="btn" href="#kontakt">Shooting anfragen</a>
+    <a class="btn dark" href="#portfolio">Portfolio ansehen</a>
+  </div>
+</header>
+
+<section id="portfolio">
+  <h2 class="section-title">Portfolio</h2>
+  <div class="grid">
+    <div class="photo">DEIN FOTO – SPORT</div>
+    <div class="photo">DEIN FOTO – PORTRAIT</div>
+    <div class="photo">DEIN FOTO – CAR</div>
+    <div class="photo">DEIN FOTO – PET</div>
+  </div>
+  <p style="color:#888;margin-top:15px;font-size:13px">Ersetze diese vier Platzhalter später durch deine besten Fotos.</p>
+</section>
+
+<section>
+  <h2 class="section-title">Was ich fotografiere</h2>
+  <div class="categories">
+    <div class="category"><h3>🏀 Sport</h3><p>Fußball, Basketball, Teams & Events</p></div>
+    <div class="category"><h3>👤 Portrait</h3><p>Einzelportraits, Freunde & Outdoor-Shootings</p></div>
+    <div class="category"><h3>🚗 Cars</h3><p>Car-Shootings, Details & Automotive</p></div>
+    <div class="category"><h3>🐕 Pets</h3><p>Hunde, Pferde & andere Tiere</p></div>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="section-title">Über mich</h2>
+  <div class="about">
+    <p>Hey, ich bin <strong>Lukas Schmöllerl</strong> und fotografiere mit meiner Sony A7 III.</p>
+    <br>
+    <p>Ich fotografiere Sport, Portraits, Autos und Tiere und möchte besondere Momente in hochwertigen Bildern festhalten.</p>
+    <br>
+    <p>Du möchtest ein Shooting oder brauchst einen Fotografen für ein Spiel oder Event? Schreib mir gerne.</p>
+  </div>
+</section>
+
+<section id="preise">
+  <h2 class="section-title">Preise</h2>
+  <div class="prices">
+    <div class="row"><span>Portrait-Shooting</span><span class="price">ab 20 €</span></div>
+    <div class="row"><span>Car-Shooting</span><span class="price">ab 30 €</span></div>
+    <div class="row"><span>Pet-Shooting</span><span class="price">ab 25 €</span></div>
+    <div class="row"><span>Sportspiel</span><span class="price">ab 35 €</span></div>
+    <div class="row"><span>Event</span><span class="price">ab 50 €</span></div>
+  </div>
+  <p style="color:#888;margin-top:15px;font-size:13px">Preise sind Beispielwerte und können von dir angepasst werden.</p>
+</section>
+
+<section id="kontakt">
+  <h2 class="section-title">Shooting anfragen</h2>
+  <div class="contact">
+    <form onsubmit="sendMail(event)">
+      <input id="name" placeholder="Dein Name" required>
+      <select id="shooting" required>
+        <option value="">Was möchtest du fotografieren?</option>
+        <option>Portrait</option><option>Sport</option><option>Cars</option><option>Pets</option><option>Event</option>
+      </select>
+      <input id="date" placeholder="Wunschdatum">
+      <textarea id="message" placeholder="Erzähl mir kurz, was du dir vorstellst..."></textarea>
+      <button class="btn" type="submit">Anfrage senden</button>
+    </form>
+    <div class="contact-info">
+      <p><strong>Direkt kontaktieren</strong></p>
+      <p>📱 WhatsApp: <a href="https://wa.me/4367761992800" target="_blank">+43 677 6199 2800</a></p>
+      <p>📧 E-Mail: luki.photographies@gmail.com</p>
+      <p>📸 Instagram: <a href="https://instagram.com/luki.photographer" target="_blank">@luki.photographer</a></p>
+      <br>
+      <p>📍 Niederösterreich</p>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Lukas Schmöllerl Photography · Sport • Portrait • Cars • Pets</footer>
+
+<script>
+function sendMail(e){
+  e.preventDefault();
+  const name=document.getElementById('name').value;
+  const type=document.getElementById('shooting').value;
+  const date=document.getElementById('date').value;
+  const msg=document.getElementById('message').value;
+  const email='luki.photographies@gmail.com';
+  const subject=encodeURIComponent('Shooting-Anfrage von '+name);
+  const body=encodeURIComponent(
+    'Name: '+name+'\nShooting: '+type+'\nWunschdatum: '+date+'\n\nNachricht:\n'+msg
+  );
+  window.location.href='mailto:'+email+'?subject='+subject+'&body='+body;
+}
+</script>
+</body>
+</html>
